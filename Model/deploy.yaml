@@ -1,0 +1,9 @@
+Deploy:
+  model: ../Model/model.pdmodel
+  output_dtype: int64
+  output_op: argmax
+  params: ../Model/model.pdiparams
+  transforms:
+  - type: Normalize
+  - type: Resize
+    target_size: [640, 480]
